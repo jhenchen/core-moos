@@ -21,8 +21,11 @@
 //
 ////////////////////////////////////////////////////////////////////////////
 **/
-
-
+/***
+ // Scene: 1 DB;1 Publisher App; N scribers App;
+ // Aim : To test the avg time from publisher publish to  scriber receive.
+//factor : publish frequence; payload size; scriber numbers;
+***/
 
 
 /*
@@ -53,7 +56,7 @@
 MOOS::ThreadPrint gPrinter(std::cout);
 
 #define NUM_CLIENTS 10
-#define PAYLOAD_SIZE 64*1024
+#define PAYLOAD_SIZE 64*1024*1024
 #define TEST_PERIOD 20.0
 #define MESSAGE_PERIOD_MS 50
 
